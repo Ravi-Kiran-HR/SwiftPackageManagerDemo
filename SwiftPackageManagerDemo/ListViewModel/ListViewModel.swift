@@ -7,9 +7,10 @@
 
 import Foundation
 import OSLog
+import FeedAPIModule
 
 class ListViewModel: ObservableObject {
-    @Published var feedItems = [FeedItem]()
+    @Published var feedViewItems = [FeedViewItem]()
     private let loader: FeedLoadable
     
     init(loader: FeedLoadable = RemoteFeedLoader(client: URLSessionHTTPClient(),
@@ -21,8 +22,11 @@ class ListViewModel: ObservableObject {
         loader.load { [weak self] result in
             switch result {
             case .success(let items):
+                let feedViewItems = items.map { feedItem in
+                    FeedViewItem(id: feedItem.id, userId: feedItem.userId, title: feedItem.title)
+                }
                 DispatchQueue.main.async {
-                    self?.feedItems = items
+                    self?.feedViewItems = feedViewItems
                 }
             case .failure(let error):
                 Logger().log("\(error.localizedDescription)")

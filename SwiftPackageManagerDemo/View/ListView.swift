@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListView: View {
     @ObservedObject var listViewModel = ListViewModel()
     
     var body: some View {
-        List(listViewModel.feedItems) { feedItem in
+        List(listViewModel.feedViewItems) { feedItem in
             Text(feedItem.title)
         }.onAppear {
             listViewModel.fetchItems()
@@ -21,6 +21,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ListView()
     }
 }

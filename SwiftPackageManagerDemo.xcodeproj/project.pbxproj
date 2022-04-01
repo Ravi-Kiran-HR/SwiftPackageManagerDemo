@@ -7,33 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0AB13427F757F000484B78 /* FeedViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AB13327F757F000484B78 /* FeedViewItem.swift */; };
 		1C94524327F7215C006C17BE /* SwiftPackageManagerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94524227F7215C006C17BE /* SwiftPackageManagerDemoApp.swift */; };
-		1C94524527F7215C006C17BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94524427F7215C006C17BE /* ContentView.swift */; };
+		1C94524527F7215C006C17BE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94524427F7215C006C17BE /* ListView.swift */; };
 		1C94524727F72160006C17BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C94524627F72160006C17BE /* Assets.xcassets */; };
 		1C94524A27F72160006C17BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C94524927F72160006C17BE /* Preview Assets.xcassets */; };
 		1C94525A27F7218E006C17BE /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94525127F7218E006C17BE /* ListViewModel.swift */; };
-		1C94525B27F7218E006C17BE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94525327F7218E006C17BE /* URLSessionHTTPClient.swift */; };
-		1C94525C27F7218E006C17BE /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94525427F7218E006C17BE /* FeedItemsMapper.swift */; };
-		1C94525D27F7218E006C17BE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94525527F7218E006C17BE /* HTTPClient.swift */; };
-		1C94525E27F7218E006C17BE /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94525627F7218E006C17BE /* RemoteFeedLoader.swift */; };
-		1C94525F27F7218E006C17BE /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94525827F7218E006C17BE /* FeedItem.swift */; };
-		1C94526027F7218E006C17BE /* FeedLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94525927F7218E006C17BE /* FeedLoadable.swift */; };
 		1C94526327F747DF006C17BE /* FeedAPIModule in Frameworks */ = {isa = PBXBuildFile; productRef = 1C94526227F747DF006C17BE /* FeedAPIModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0AB13327F757F000484B78 /* FeedViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewItem.swift; sourceTree = "<group>"; };
 		1C94523F27F7215C006C17BE /* SwiftPackageManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPackageManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C94524227F7215C006C17BE /* SwiftPackageManagerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPackageManagerDemoApp.swift; sourceTree = "<group>"; };
-		1C94524427F7215C006C17BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C94524427F7215C006C17BE /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		1C94524627F72160006C17BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C94524927F72160006C17BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C94525127F7218E006C17BE /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		1C94525327F7218E006C17BE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
-		1C94525427F7218E006C17BE /* FeedItemsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
-		1C94525527F7218E006C17BE /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		1C94525627F7218E006C17BE /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
-		1C94525827F7218E006C17BE /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
-		1C94525927F7218E006C17BE /* FeedLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0AB13527F758FA00484B78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C94524427F7215C006C17BE /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1C94523627F7215C006C17BE = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +65,9 @@
 		1C94524127F7215C006C17BE /* SwiftPackageManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1C94525227F7218E006C17BE /* Feed API */,
-				1C94525727F7218E006C17BE /* Feed Feature */,
 				1C94525027F7218E006C17BE /* ListViewModel */,
 				1C94524227F7215C006C17BE /* SwiftPackageManagerDemoApp.swift */,
-				1C94524427F7215C006C17BE /* ContentView.swift */,
+				1C0AB13527F758FA00484B78 /* View */,
 				1C94524627F72160006C17BE /* Assets.xcassets */,
 				1C94524827F72160006C17BE /* Preview Content */,
 			);
@@ -90,28 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				1C94525127F7218E006C17BE /* ListViewModel.swift */,
+				1C0AB13327F757F000484B78 /* FeedViewItem.swift */,
 			);
 			path = ListViewModel;
-			sourceTree = "<group>";
-		};
-		1C94525227F7218E006C17BE /* Feed API */ = {
-			isa = PBXGroup;
-			children = (
-				1C94525327F7218E006C17BE /* URLSessionHTTPClient.swift */,
-				1C94525427F7218E006C17BE /* FeedItemsMapper.swift */,
-				1C94525527F7218E006C17BE /* HTTPClient.swift */,
-				1C94525627F7218E006C17BE /* RemoteFeedLoader.swift */,
-			);
-			path = "Feed API";
-			sourceTree = "<group>";
-		};
-		1C94525727F7218E006C17BE /* Feed Feature */ = {
-			isa = PBXGroup;
-			children = (
-				1C94525827F7218E006C17BE /* FeedItem.swift */,
-				1C94525927F7218E006C17BE /* FeedLoadable.swift */,
-			);
-			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,15 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C94525C27F7218E006C17BE /* FeedItemsMapper.swift in Sources */,
-				1C94525E27F7218E006C17BE /* RemoteFeedLoader.swift in Sources */,
-				1C94524527F7215C006C17BE /* ContentView.swift in Sources */,
-				1C94525D27F7218E006C17BE /* HTTPClient.swift in Sources */,
-				1C94525F27F7218E006C17BE /* FeedItem.swift in Sources */,
+				1C94524527F7215C006C17BE /* ListView.swift in Sources */,
 				1C94524327F7215C006C17BE /* SwiftPackageManagerDemoApp.swift in Sources */,
 				1C94525A27F7218E006C17BE /* ListViewModel.swift in Sources */,
-				1C94525B27F7218E006C17BE /* URLSessionHTTPClient.swift in Sources */,
-				1C94526027F7218E006C17BE /* FeedLoadable.swift in Sources */,
+				1C0AB13427F757F000484B78 /* FeedViewItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPackageManagerDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = T9PFC79BG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -357,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPackageManagerDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = T9PFC79BG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
